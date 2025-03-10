@@ -246,7 +246,7 @@
   method: "POST",
   headers: {
     "Content-Type": "application/json",
-    "Authorization": `Bearer ${process.env.HUGGING_FACE_TOKEN}`
+    "Authorization": `Bearer ${process.env.NEXT_PUBLIC_HUGGING_FACE_TOKEN}`
   },
   body: JSON.stringify({ inputs: sourceText })
 });
