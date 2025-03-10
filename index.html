@@ -246,7 +246,7 @@
   method: "POST",
   headers: {
     "Content-Type": "application/json",
-    "Authorization": "Bearer " // ここを作成したトークンに置き換える
+    "Authorization": `Bearer ${process.env.HUGGING_FACE_TOKEN}`
   },
   body: JSON.stringify({ inputs: sourceText })
 });
